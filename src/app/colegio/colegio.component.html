@@ -1,0 +1,56 @@
+<div id="container">
+    <div id="saludo">
+        <h1>Sistema para Entrega de Estudiantes</h1>
+    </div>
+    <div id="sub-container">
+        <h3 style="text-align: center;">Estudiantes a Entregar</h3>
+        <div id="tabla1">
+            <table class=" table table-dark ">
+                <thead>
+                    <tr>
+                        <th scope="col">Carril 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let estudiante of lista_estudiantes'>
+                        <td *ngIf="estudiante.data.carril=='3' && estudiante.data.entregar==true && estudiante.data.seccion=='Pre-escolar'" style="background-color: darkgoldenrod;">{{estudiante.data.nombre}} {{estudiante.data.apellido}}</td>
+                        <td *ngIf="estudiante.data.carril=='3' && estudiante.data.entregar==true && estudiante.data.seccion=='Primaria'" style="background-color: darkred;">{{estudiante.data.nombre}} {{estudiante.data.apellido}}</td>
+                        <td *ngIf="estudiante.data.carril=='3' && estudiante.data.entregar==true && estudiante.data.seccion=='Bachillerato'" style="background-color: darkgreen;">{{estudiante.data.nombre}} {{estudiante.data.apellido}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="tabla2">
+            <table class=" table table-dark ">
+                <thead>
+                    <tr>
+                        <th scope="col">Carril 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let estudiante of lista_estudiantes'>
+                        <td *ngIf="estudiante.data.carril=='2' && estudiante.data.entregar==true && estudiante.data.seccion=='Pre-escolar'" style="background-color: darkgoldenrod;">{{estudiante.data.nombre}} {{estudiante.data.apellido}}</td>
+                        <td *ngIf="estudiante.data.carril=='2' && estudiante.data.entregar==true && estudiante.data.seccion=='Primaria'" style="background-color: darkred;">{{estudiante.data.nombre}} {{estudiante.data.apellido}}</td>
+                        <td *ngIf="estudiante.data.carril=='2' && estudiante.data.entregar==true && estudiante.data.seccion=='Bachillerato'" style="background-color: darkgreen;">{{estudiante.data.nombre}} {{estudiante.data.apellido}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="tabla3">
+            <table class=" table table-dark ">
+                <thead>
+                    <tr>
+                        <th scope="col">Carril 1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let estudiante of lista_estudiantes'>
+                        <td *ngIf="estudiante.data.carril=='1' && estudiante.data.entregar==true && estudiante.data.seccion=='Pre-escolar'" style="background-color: darkgoldenrod;">{{estudiante.data.nombre}} {{estudiante.data.apellido}}</td>
+                        <td *ngIf="estudiante.data.carril=='1' && estudiante.data.entregar==true && estudiante.data.seccion=='Primaria'" style="background-color: darkred;">{{estudiante.data.nombre}} {{estudiante.data.apellido}}</td>
+                        <td *ngIf="estudiante.data.carril=='1' && estudiante.data.entregar==true && estudiante.data.seccion=='Bachillerato'" style="background-color: darkgreen">{{estudiante.data.nombre}} {{estudiante.data.apellido}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

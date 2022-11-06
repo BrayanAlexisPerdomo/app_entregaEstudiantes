@@ -1,0 +1,32 @@
+#container{
+    width: 1365px;
+}
+
+#sub-container{
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#tabla1{
+    width: 300px;
+    text-align: center;
+    float: right;
+}
+
+#tabla2{
+    width: 300px;
+    text-align: center;
+    float: right;
+}
+
+#tabla3{
+    width: 300px;
+    text-align: center;
+    float: right;
+}
+
+
+#saludo span{
+    color: dodgerblue;
+}

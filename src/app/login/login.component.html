@@ -1,0 +1,33 @@
+<div id="container">
+    <h1>Inicio de sesion padres de familia</h1>
+    <div id="form">
+        <div class="form-outline mb-4">
+            <label class="form-label" for="form2Example1">Cedula</label>
+            <input type="text" [(ngModel)]="cedula" class="form-control">
+        </div>
+        <div class="form-outline mb-4">
+            <label class="form-label" for="form2Example2">Contraseña</label>
+            <input type="password" [(ngModel)]="contrasena">
+        </div>
+        <br>
+        <button class="btn btn-success btn-block mb-4" type="button" (click)="validate()">Ingresar</button>
+    </div>
+    <!--
+    <br>
+    <table class="table table-hover table-primary">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Dirección</th>
+                <th scope="col">Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let student of students'>
+                <td>{{student.data.Name}}</td>
+                <td>{{student.data.Address}}</td>
+                <td>{{student.data.Age}}</td>
+            </tr>
+        </tbody>
+    </table>-->
+</div>

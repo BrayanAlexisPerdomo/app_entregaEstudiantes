@@ -1,0 +1,51 @@
+<div id="container">
+  <div id="saludo">
+    <h1>Registro de estudiantes</h1>
+  </div>
+  <div id="obtenerDatos">
+    <div class="mb-3">
+      <label for="Nombre" class="form-label">Nombre</label><br>
+      <input type="text" class="input" [(ngModel)]="nombre">
+    </div>
+    <div class="mb-3">
+      <label for="Apellido" class="form-label">Apellido</label><br>
+      <input type="text" class="input" [(ngModel)]="apellido">
+    </div>
+    <div class="mb-3">
+      <label for="Seccion" class="form-label">Seccion del estudiante</label><br>
+      <div class="btn-group btn-group-toggle" data-toggle="buttons" class="btn-group-vertical">
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option1" autocomplete="off" [(ngModel)]="seccion" value='Pre-escolar'>
+          Pre-escolar </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option2" autocomplete="off" [(ngModel)]="seccion" value='Primaria'>
+          Primaria </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option3" autocomplete="off" [(ngModel)]="seccion" value='Bachillerato'>
+          Bachillerato </label>
+      </div>
+    </div>
+    <button class="btn btn-success" type="button" (click)="createRecord()">Guardar</button>
+
+  </div><br>
+  <h1 style="text-align: center;">Estudiantes Registrados:</h1>
+  <table class=" table table-hover table-primary">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Seccion</th>
+        <th scope="col">Editar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let students of students'>
+        <td>{{students.data.nombre}}</td>
+        <td>{{students.data.apellido}}</td>
+        <td>{{students.data.seccion}}</td>
+        <!--<td><a class="btn btn-primary" (click)="updateRecord(student.id)">Editar</a></td>-->
+        <td><a class="btn btn-danger" (click)="removeRecord(students.id)">Eliminar</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

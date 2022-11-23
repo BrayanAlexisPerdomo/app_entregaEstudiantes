@@ -21,6 +21,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 import { CrudService } from './service/crud.service';
 import { environment } from 'src/environments/environment';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -30,6 +31,7 @@ const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'acudiente/:cedula/:contrasena', component: AcudienteComponent },
   { path: 'home', component: ColegioComponent },
+  { path: 'register', component: RegisterComponent },
 
 ]
 
@@ -38,7 +40,8 @@ const appRoutes: Routes = [
     AppComponent,
     LoginComponent,
     ColegioComponent,
-    AcudienteComponent
+    AcudienteComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

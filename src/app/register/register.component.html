@@ -1,0 +1,39 @@
+<div id="container">
+    <div id="saludo">
+      <h1>Registro de Acudiente</h1>
+    </div>
+    <div id="obtenerDatos">
+      <div class="mb-3">
+        <label for="Nombre" class="form-label">Nombre</label><br>
+        <input type="text" class="input" [(ngModel)]="nombre">
+      </div>
+      <div class="mb-3">
+        <label for="Apellido" class="form-label">Apellido</label><br>
+        <input type="text" class="input" [(ngModel)]="apellido">
+      </div>
+      <div class="mb-3">
+        <label for="Apellido" class="form-label">cedula</label><br>
+        <input type="text" class="input" [(ngModel)]="cedula">
+      </div>
+      <div class="mb-3">
+        <label for="Apellido" class="form-label">celular</label><br>
+        <input type="text" class="input" [(ngModel)]="celular">
+      </div>
+      <div class="mb-3">
+        <label for="Apellido" class="form-label">correo</label><br>
+        <input type="text" class="input" [(ngModel)]="correo">
+        
+      </div>
+      <div class="mb-3">
+        <label for="Apellido" class="form-label">Contraseña</label><br>
+        <input type="text" class="input" [(ngModel)]="contrasena">
+      </div>
+      <button class="btn btn-success" type="button" (click)="createRecord()"  (click)="redirigir()">Guardar</button>
+
+      
+      <h5>¡ Tener en cuenta que la contraseña y cedula seran utilizadas para el respectivo inicio de sesión !</h5>
+      </div>
+     
+    </div>
+    
+

@@ -18,6 +18,9 @@ export class CrudService {
   create_new_student(record: {}) {
     return this.fireStore.collection('estudiantes').add(record);
   }
+  create_New_Parent(record:{}){
+    return this.fireStore.collection('acudientes').add(record);
+  }
   delete_student(id: String) {
     return this.fireStore.doc('estudiantes/' + id).delete();
   }

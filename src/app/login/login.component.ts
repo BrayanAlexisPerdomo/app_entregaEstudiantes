@@ -57,4 +57,9 @@ export class LoginComponent implements OnInit {
   redirigir(cedula: string, contrasena: string) {
     this.router.navigate(['acudiente', cedula, contrasena]);
   }
+
+  onClick() {
+    this.router.navigate(['register']);
+  }
+
 }
